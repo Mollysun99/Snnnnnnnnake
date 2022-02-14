@@ -3,10 +3,14 @@
     <head>
         <title>Snake Game</title>
         <link rel="icon" href="icon.jpeg">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
         <style>
             body {
                 background-color:#002b06;
                 font-family: sans-serif;
+                margin: 0;
+                height: 10000px;
+                overflow-x: hidden;
             }
             #intro {
                 position: absolute;
@@ -31,16 +35,19 @@
                 font-weight: bold;
                 text-shadow: 3px 3px 1px rgb(228, 130, 130);
             }
-            #third {
+            h1 {
+              margin: 0;
+              padding: 0;
               position: fixed;
-              font-size:180px;
-              line-height: 30px;
-              letter-spacing: -60px;
+              font-size:100px;
               color:white;
-              top: 50vh;
+              top: 50%;
+              transform: translateY(-50%);
+              white-space: nowrap;
               z-index: -10;
               text-decoration: line-through;
               text-shadow: 1px 1px 60px rgb(52, 172, 98);
+              left: 500px;
             }
             #word{
                 text-shadow: 1px 1px 30px rgb(25, 0, 255);
@@ -77,7 +84,11 @@
             }
 
         </style>
+        
         <script>
+             $(document).on('scroll', function(){
+                $('h1').css("left", Math.max(500 - 0.35*window.scrollY) + "px")
+            })
 
         </script>
     </head>
@@ -91,9 +102,9 @@
             The British adopted the game as the <span id="word">Victorians</span> adapted it to their worldview of the effects of good deeds and bad deeds. The virtues correspond with the ladders and the vices correspond with the snakes. The number of snakes and ladders were made equal.
         </div>
         <!-- https://www.thesprucecrafts.com/chutes-and-ladders-snakes-and-ladders-411609 -->
-        <div id="third">
+        <h1 id="third">
             When the game was published in the United States by Milton Bradley in 1943, they redesigned it to eliminate the scary snakes and instead translate it to the playground. On the board, children climb ladders and slide down descending chutes. It maintains a little of the original morality lessons. At the bottom of each ladder, a child is performing a good deed. At the top of a chute, the child is doing something mischievous.
-        </div>
+        </h1>
         <!-- https://www.thesprucecrafts.com/chutes-and-ladders-snakes-and-ladders-411609 -->
 
         <a href="https://www.microsoft.com/en-us/p/snake-game/9nblggh5xhgq#activetab=pivot:overviewtab"><img id=background src="snake.jpeg"></a>
