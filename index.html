@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Snake Game</title>
+        <link rel="icon" href="icon.jpeg">
+        <style>
+            body {
+                background-color:#002b06;
+                font-family: sans-serif;
+            }
+            #intro {
+                position: absolute;
+                color:rgb(93, 255, 29);
+                background-color:#000000;
+                text-shadow: 1px 3px 1px rgb(161, 161, 161);
+                border: 6px solid rgb(39, 194, 34);
+                width: 100px;
+                left: 10px;
+                top: 100px;
+                font-size: 30px;
+                font-family: Helvetica;
+            }
+            #second {
+                position: relative;
+                color: rgb(82, 6, 6);
+                background-color: aquamarine;
+                text-shadow: rgb(95, 67, 218);
+                width: 500px;
+                left: 60vw;
+                top: 20vh;
+                font-weight: bold;
+                text-shadow: 3px 3px 1px rgb(228, 130, 130);
+            }
+            #third {
+              position: fixed;
+              font-size:180px;
+              line-height: 30px;
+              letter-spacing: -60px;
+              color:white;
+              top: 50vh;
+              z-index: -10;
+              text-decoration: line-through;
+              text-shadow: 1px 1px 60px rgb(52, 172, 98);
+            }
+            #word{
+                text-shadow: 1px 1px 30px rgb(25, 0, 255);
+                background-color: cornflowerblue;
+            }
+            #ancient:link {
+                color: black;
+            }
+
+            #ancient:visited {
+                color: rgb(0, 255, 76);
+            }
+
+            #ancient:hover {
+                font-size: 60px;
+                text-decoration: overline;
+                color: crimson;
+            }
+            #videotwo {
+                position: fixed;
+                width: 30vw;
+                top: 50vh;
+                right: 3vw;
+                z-index: 10;
+            }
+
+            #videotwo:hover {
+                border: 50px dotted rgb(145, 255, 0);
+            }
+
+            #videotwo:active {
+                border: 50px dashed rgb(255, 145, 0);
+            }
+
+        </style>
+        <script>
+
+        </script>
+    </head>
+
+    <body>
+        <div id="intro">
+            The ancient game of <a id="ancient" href="https://en.wikipedia.org/wiki/Snakes_and_ladders">Snakes and Ladders</a>, which is believed to date back to India in the 2nd century B.C. <br> The historic version was an allegory of the journey of life where you ascend due to destiny, or karma, represented by ladders, but are set back by kama, or desire, represented by snakes. There were more snakes than ladders, making it harder to ascend to Moksha — spiritual liberation.
+        </div>
+        <!-- https://www.thesprucecrafts.com/chutes-and-ladders-snakes-and-ladders-411609 -->
+        <div id="second">
+            The British adopted the game as the <span id="word">Victorians</span> adapted it to their worldview of the effects of good deeds and bad deeds. The virtues correspond with the ladders and the vices correspond with the snakes. The number of snakes and ladders were made equal.
+        </div>
+        <!-- https://www.thesprucecrafts.com/chutes-and-ladders-snakes-and-ladders-411609 -->
+        <div id="third">
+            When the game was published in the United States by Milton Bradley in 1943, they redesigned it to eliminate the scary snakes and instead translate it to the playground. On the board, children climb ladders and slide down descending chutes. It maintains a little of the original morality lessons. At the bottom of each ladder, a child is performing a good deed. At the top of a chute, the child is doing something mischievous.
+        </div>
+        <!-- https://www.thesprucecrafts.com/chutes-and-ladders-snakes-and-ladders-411609 -->
+
+        <a href="https://www.microsoft.com/en-us/p/snake-game/9nblggh5xhgq#activetab=pivot:overviewtab"><img id=background src="snake.jpeg"></a>
+
+        <a href="https://www.youtube.com/watch?v=dJ-dMNzSBNI"> <video id="videotwo" loop controls src="snake game.mov"></video></a>
+
+
+    </body>
+</html>
